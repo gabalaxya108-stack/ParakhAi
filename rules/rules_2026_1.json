@@ -1,0 +1,345 @@
+[
+  {
+    "rule_id": "LM-MRP-001",
+    "name": "MRP Mandatory Declaration",
+    "description": "Retail sale price of the package shall be declared on every package as Maximum Retail Price (MRP).",
+    "requirement": "The package must visibly declare the retail sale price as 'Maximum Retail Price' or 'MRP' inclusive of all taxes.",
+    "applicable_product_categories": [
+      "all",
+      "packaged_commodity"
+    ],
+    "field_to_validate": "mrp",
+    "validation_type": "REQUIRED",
+    "severity": "CRITICAL",
+    "effective_from": "2011-11-01",
+    "effective_until": null,
+    "rule_version": "2026.1",
+    "source_reference": "Legal Metrology (Packaged Commodities) Rules, 2011 - Rule 6(1)(e)",
+    "enabled": true
+  },
+  {
+    "rule_id": "LM-MRP-002",
+    "name": "MRP Tax Inclusive Formulation",
+    "description": "The MRP declaration must clearly state that the declared price is inclusive of all taxes.",
+    "requirement": "The MRP declaration must include the wording 'incl. of all taxes' or 'inclusive of all taxes'.",
+    "applicable_product_categories": [
+      "all",
+      "packaged_commodity"
+    ],
+    "field_to_validate": "mrp",
+    "validation_type": "FORMAT",
+    "severity": "HIGH",
+    "effective_from": "2011-11-01",
+    "effective_until": null,
+    "rule_version": "2026.1",
+    "source_reference": "Legal Metrology (Packaged Commodities) Rules, 2011 - Rule 6(1)(e)",
+    "enabled": true
+  },
+  {
+    "rule_id": "LM-NETQTY-001",
+    "name": "Net Quantity Mandatory Declaration",
+    "description": "Net quantity in terms of standard unit of weight, measure or number shall be declared on every package.",
+    "requirement": "The package must declare net quantity in standard metric units (g, kg, ml, l) or numerical count.",
+    "applicable_product_categories": [
+      "all",
+      "packaged_commodity"
+    ],
+    "field_to_validate": "net_quantity",
+    "validation_type": "REQUIRED",
+    "severity": "CRITICAL",
+    "effective_from": "2011-11-01",
+    "effective_until": null,
+    "rule_version": "2026.1",
+    "source_reference": "Legal Metrology (Packaged Commodities) Rules, 2011 - Rule 6(1)(b)",
+    "enabled": true
+  },
+  {
+    "rule_id": "LM-NETQTY-002",
+    "name": "Net Quantity Standard Metric Symbol",
+    "description": "Symbols used for units of measurement shall be standard metric symbols without pluralization.",
+    "requirement": "Unit symbols must be standard metric (e.g., 'g' not 'gms', 'kg' not 'kgs', 'ml' not 'mls').",
+    "applicable_product_categories": [
+      "all",
+      "packaged_commodity"
+    ],
+    "field_to_validate": "net_quantity",
+    "validation_type": "UNIT_SPECIFICATION",
+    "severity": "MEDIUM",
+    "effective_from": "2011-11-01",
+    "effective_until": null,
+    "rule_version": "2026.1",
+    "source_reference": "Legal Metrology (Packaged Commodities) Rules, 2011 - Rule 11 & Rule 13",
+    "enabled": true
+  },
+  {
+    "rule_id": "LM-NAME-001",
+    "name": "Generic / Common Product Name Declaration",
+    "description": "The common or generic name of the commodity contained in the package must be declared.",
+    "requirement": "The package must explicitly declare the common or generic name identifying the commodity.",
+    "applicable_product_categories": [
+      "all",
+      "packaged_commodity"
+    ],
+    "field_to_validate": "product_name",
+    "validation_type": "REQUIRED",
+    "severity": "HIGH",
+    "effective_from": "2011-11-01",
+    "effective_until": null,
+    "rule_version": "2026.1",
+    "source_reference": "Legal Metrology (Packaged Commodities) Rules, 2011 - Rule 6(1)(a)",
+    "enabled": true
+  },
+  {
+    "rule_id": "LM-MFD-001",
+    "name": "Manufacturer Name and Complete Address",
+    "description": "The name and complete postal address of the manufacturer, packer or importer must be declared on the label.",
+    "requirement": "The package must declare the registered name and complete postal address of the manufacturer or packer.",
+    "applicable_product_categories": [
+      "all",
+      "packaged_commodity"
+    ],
+    "field_to_validate": "manufacturer",
+    "validation_type": "REQUIRED",
+    "severity": "CRITICAL",
+    "effective_from": "2011-11-01",
+    "effective_until": null,
+    "rule_version": "2026.1",
+    "source_reference": "Legal Metrology (Packaged Commodities) Rules, 2011 - Rule 6(1)(a)",
+    "enabled": true
+  },
+  {
+    "rule_id": "LM-DATE-001",
+    "name": "Month and Year of Packaging or Manufacture",
+    "description": "The month and year in which the commodity is manufactured, packed or imported shall be clearly declared.",
+    "requirement": "The package must declare the month and year of manufacture or pre-packaging (e.g. MM/YYYY or Month Year).",
+    "applicable_product_categories": [
+      "all",
+      "packaged_commodity"
+    ],
+    "field_to_validate": "packing_date",
+    "validation_type": "REQUIRED",
+    "severity": "HIGH",
+    "effective_from": "2011-11-01",
+    "effective_until": null,
+    "rule_version": "2026.1",
+    "source_reference": "Legal Metrology (Packaged Commodities) Rules, 2011 - Rule 6(1)(d)",
+    "enabled": true
+  },
+  {
+    "rule_id": "LM-CARE-001",
+    "name": "Consumer Care Helpline Contact Details",
+    "description": "Every package must bear the name, address, telephone number, and email of the person or office for consumer complaints.",
+    "requirement": "The package must declare consumer care helpline telephone number, email address, and postal address.",
+    "applicable_product_categories": [
+      "all",
+      "packaged_commodity"
+    ],
+    "field_to_validate": "consumer_care",
+    "validation_type": "REQUIRED",
+    "severity": "HIGH",
+    "effective_from": "2011-11-01",
+    "effective_until": null,
+    "rule_version": "2026.1",
+    "source_reference": "Legal Metrology (Packaged Commodities) Rules, 2011 - Rule 6(1)(da)",
+    "enabled": true
+  },
+  {
+    "rule_id": "LM-ORIGIN-001",
+    "name": "Country of Origin Declaration",
+    "description": "The country of origin or manufacturer shall be clearly mentioned on every package.",
+    "requirement": "The package must clearly declare 'Country of Origin: [Country]' or 'Made in [Country]'.",
+    "applicable_product_categories": [
+      "all",
+      "packaged_commodity"
+    ],
+    "field_to_validate": "country_of_origin",
+    "validation_type": "REQUIRED",
+    "severity": "HIGH",
+    "effective_from": "2017-06-23",
+    "effective_until": null,
+    "rule_version": "2026.1",
+    "source_reference": "Legal Metrology (Packaged Commodities) Rules, 2011 - Rule 6(1)(g)",
+    "enabled": true
+  },
+  {
+    "rule_id": "LM-LOT-001",
+    "name": "Batch or Lot Identification Code",
+    "description": "Lot, batch or identification number shall be declared on packages containing commodities.",
+    "requirement": "The package must declare batch number, lot number, or code identifying the manufacturing run.",
+    "applicable_product_categories": [
+      "food",
+      "beverages",
+      "pharmaceuticals",
+      "packaged_commodity"
+    ],
+    "field_to_validate": "batch_or_lot_number",
+    "validation_type": "REQUIRED",
+    "severity": "MEDIUM",
+    "effective_from": "2011-11-01",
+    "effective_until": null,
+    "rule_version": "2026.1",
+    "source_reference": "Legal Metrology (Packaged Commodities) Rules, 2011 - Rule 6(1)(q)",
+    "enabled": true
+  },
+  {
+    "rule_id": "LM-USP-001",
+    "name": "Unit Sale Price (USP) Mandatory Declaration",
+    "description": "Where net quantity is greater than 100g or 100ml, unit sale price (e.g. \u20b9 / g, \u20b9 / ml, \u20b9 / 100g) must be declared and mathematically equal to MRP divided by net quantity.",
+    "requirement": "Unit sale price must be declared on packages exceeding 100g or 100ml and must mathematically reconcile with declared MRP and Net Quantity.",
+    "applicable_product_categories": [
+      "food",
+      "beverages",
+      "packaged_commodity"
+    ],
+    "field_to_validate": "unit_sale_price",
+    "validation_type": "UNIT_PRICE_CALCULATION",
+    "severity": "CRITICAL",
+    "effective_from": "2022-12-01",
+    "effective_until": null,
+    "rule_version": "2026.1",
+    "source_reference": "Rule 6(11), Legal Metrology (Packaged Commodities) Amendment Rules, 2022",
+    "enabled": true
+  },
+  {
+    "rule_id": "LM-FONT-001",
+    "name": "Minimum Font Height & Legibility Indicator",
+    "description": "The height of any numeral and letter shall not be less than the prescribed statutory minimum font height based on package net quantity.",
+    "requirement": "Mandatory declarations must be clearly legible and satisfy statutory minimum character height standards under Rule 9.",
+    "applicable_product_categories": [
+      "all",
+      "packaged_commodity"
+    ],
+    "field_to_validate": "net_quantity",
+    "validation_type": "READABILITY_CHECK",
+    "severity": "MEDIUM",
+    "effective_from": "2011-11-01",
+    "effective_until": null,
+    "rule_version": "2026.1",
+    "source_reference": "Rule 9 & Table I, Legal Metrology (Packaged Commodities) Rules, 2011",
+    "enabled": true
+  },
+  {
+    "rule_id": "LM-ECOM-001",
+    "name": "E-Commerce Marketplace Digital Declarations Parity",
+    "description": "Digital marketplace product listings must declare all mandatory declarations identical to physical package label.",
+    "requirement": "E-commerce digital listing declarations (MRP, Net Quantity, Country of Origin, Expiry) must match physical packaging.",
+    "applicable_product_categories": [
+      "all",
+      "e_commerce_listing",
+      "packaged_commodity"
+    ],
+    "field_to_validate": "ecom_listing",
+    "validation_type": "ECOM_LISTING_MATCH",
+    "severity": "HIGH",
+    "effective_from": "2017-06-23",
+    "effective_until": null,
+    "rule_version": "2026.1",
+    "source_reference": "Rule 6(10), Legal Metrology (Packaged Commodities) Rules, 2011 & E-Commerce Amendments",
+    "enabled": true
+  },
+  {
+    "rule_id": "LM-EXPIRY-001",
+    "name": "Best Before / Use By / Expiry Date Declaration",
+    "description": "Every package of food commodity shall bear the 'Best Before' or 'Use By' date as mandated under Rule 6(1)(g) read with FSSAI Food Safety and Standards (Packaging and Labelling) Regulations. For non-food items, shelf-life indicator where applicable.",
+    "requirement": "Package must display 'Best Before' or 'Use By' date in MM/YYYY or DD/MM/YYYY format.",
+    "applicable_product_categories": [
+      "food",
+      "dairy",
+      "beverage",
+      "confectionery",
+      "packaged_commodity"
+    ],
+    "field_to_validate": "expiry_date",
+    "validation_type": "REQUIRED",
+    "severity": "HIGH",
+    "effective_from": "2011-11-01",
+    "effective_until": null,
+    "rule_version": "2026.1",
+    "source_reference": "Legal Metrology (Packaged Commodities) Rules, 2011 - Rule 6(1)(g) & FSSAI Regulations",
+    "enabled": true
+  },
+  {
+    "rule_id": "LM-FSSAI-001",
+    "name": "FSSAI License Number (Food Items)",
+    "description": "Pre-packaged food products sold in India must display a valid 14-digit FSSAI License Number on the label, as mandated under the Food Safety and Standards Act, 2006 and FSSAI Packaging and Labelling Regulations, 2011.",
+    "requirement": "FSSAI License Number must be displayed on food commodity packages as per FSSAI Regulations.",
+    "applicable_product_categories": [
+      "food",
+      "dairy",
+      "beverage",
+      "confectionery",
+      "packaged_commodity"
+    ],
+    "field_to_validate": "fssai_license",
+    "validation_type": "REQUIRED",
+    "severity": "HIGH",
+    "effective_from": "2011-08-05",
+    "effective_until": null,
+    "rule_version": "2026.1",
+    "source_reference": "Food Safety and Standards Act, 2006 & FSSAI (Packaging and Labelling) Regulations, 2011",
+    "enabled": true
+  },
+  {
+    "rule_id": "LM-VEGMARK-001",
+    "name": "Vegetarian / Non-Vegetarian Marking (Food Items)",
+    "description": "Food products in India must display the mandatory green dot (vegetarian) or brown dot (non-vegetarian) symbol as per FSSAI Food Safety and Standards (Packaging and Labelling) Regulations.",
+    "requirement": "Green dot (veg) or brown dot (non-veg) marking must be displayed on food packages.",
+    "applicable_product_categories": [
+      "food",
+      "dairy",
+      "beverage",
+      "confectionery",
+      "packaged_commodity"
+    ],
+    "field_to_validate": "veg_nonveg_mark",
+    "validation_type": "REQUIRED",
+    "severity": "MEDIUM",
+    "effective_from": "2011-08-05",
+    "effective_until": null,
+    "rule_version": "2026.1",
+    "source_reference": "FSSAI Food Safety and Standards (Packaging and Labelling) Regulations, 2011 - Reg. 2.2.2",
+    "enabled": true
+  },
+  {
+    "rule_id": "LM-INGRED-001",
+    "name": "List of Ingredients (Food Items)",
+    "description": "All pre-packaged food commodities must declare a complete list of ingredients in descending order of composition, as required under FSSAI Food Safety and Standards Regulations, 2011.",
+    "requirement": "Complete list of ingredients in descending order of composition must be displayed on food packages.",
+    "applicable_product_categories": [
+      "food",
+      "dairy",
+      "beverage",
+      "confectionery",
+      "packaged_commodity"
+    ],
+    "field_to_validate": "ingredients_list",
+    "validation_type": "REQUIRED",
+    "severity": "MEDIUM",
+    "effective_from": "2011-08-05",
+    "effective_until": null,
+    "rule_version": "2026.1",
+    "source_reference": "FSSAI Food Safety and Standards (Packaging and Labelling) Regulations, 2011 - Reg. 2.2.1",
+    "enabled": true
+  },
+  {
+    "rule_id": "LM-NUTRI-001",
+    "name": "Nutritional Information Declaration (Food Items)",
+    "description": "Pre-packaged food products must display nutritional information per serving and per 100g/100ml as mandated by FSSAI Food Safety and Standards Regulations, 2011.",
+    "requirement": "Nutritional information table must be displayed on pre-packaged food products.",
+    "applicable_product_categories": [
+      "food",
+      "dairy",
+      "beverage",
+      "confectionery",
+      "packaged_commodity"
+    ],
+    "field_to_validate": "nutritional_info",
+    "validation_type": "REQUIRED",
+    "severity": "MEDIUM",
+    "effective_from": "2011-08-05",
+    "effective_until": null,
+    "rule_version": "2026.1",
+    "source_reference": "FSSAI Food Safety and Standards (Packaging and Labelling) Regulations, 2011 - Reg. 2.2.2",
+    "enabled": true
+  }
+]

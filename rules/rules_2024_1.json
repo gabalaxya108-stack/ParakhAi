@@ -1,0 +1,32 @@
+[
+  {
+    "rule_id": "LM-MRP-001",
+    "name": "MRP Declaration",
+    "description": "Retail sale price of the package shall be declared on every package.",
+    "requirement": "The package must declare MRP.",
+    "applicable_product_categories": ["all"],
+    "field_to_validate": "mrp",
+    "validation_type": "REQUIRED",
+    "severity": "HIGH",
+    "effective_from": "2011-11-01",
+    "effective_until": "2025-12-31",
+    "rule_version": "2024.1",
+    "source_reference": "Legal Metrology (Packaged Commodities) Rules, 2011",
+    "enabled": true
+  },
+  {
+    "rule_id": "LM-NETQTY-001",
+    "name": "Net Quantity Declaration",
+    "description": "Net quantity in terms of standard unit shall be declared on every package.",
+    "requirement": "The package must declare net quantity.",
+    "applicable_product_categories": ["all"],
+    "field_to_validate": "net_quantity",
+    "validation_type": "REQUIRED",
+    "severity": "HIGH",
+    "effective_from": "2011-11-01",
+    "effective_until": "2025-12-31",
+    "rule_version": "2024.1",
+    "source_reference": "Legal Metrology (Packaged Commodities) Rules, 2011",
+    "enabled": true
+  }
+]

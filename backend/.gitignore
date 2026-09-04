@@ -1,0 +1,10 @@
+# Backend .gitignore
+.env
+.env.*
+!.env.example
+*.py[cod]
+__pycache__/
+reports/*
+!reports/.gitkeep
+uploads/*
+!uploads/.gitkeep
