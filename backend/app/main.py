@@ -74,6 +74,19 @@ def create_application() -> FastAPI:
             "health_url": f"{settings.API_V1_STR}/health"
         }
 
+
+    @application.on_event("startup")
+    async def startup_event():
+        """Create all database tables on startup."""
+        try:
+            from backend.app.db.session import engine
+            from backend.app.db.base import Base
+            import backend.app.models  # noqa: F401 - import all models so Base knows about them
+            Base.metadata.create_all(bind=engine)
+            logger.info("Database tables created/verified successfully.")
+        except Exception as e:
+            logger.warning(f"Database table creation warning (non-fatal): {e}")
+
     return application
 
 app = create_application()

@@ -28,7 +28,7 @@ class Settings(BaseSettings):
     DATABASE_PATH: str = os.getenv("DATABASE_PATH", "data/inspections.db")
     DATABASE_URL: str = os.getenv(
         "DATABASE_URL",
-        "postgresql://localhost:5432/legal_metrology"
+        "sqlite:///./legal_metrology.db"
     )
 
     # Tesseract OCR Configuration
