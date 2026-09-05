@@ -51,13 +51,13 @@ export const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose, onLogin
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs">
       <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 w-full max-w-md overflow-hidden">
         <div className="px-6 py-4 bg-slate-900 text-white flex items-center justify-between border-b border-slate-800">
-          <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded bg-blue-700 flex items-center justify-center text-white">
-              <Lock className="w-4 h-4" />
+          <div className="flex items-center gap-2.5">
+            <div className="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center bg-white shadow-xs border border-slate-700 shrink-0">
+              <img src="/logo.png" alt="PARAKH AI Logo" className="w-full h-full object-contain p-0.5" />
             </div>
             <div>
               <h2 className="text-sm font-bold tracking-tight">PARAKH AI Access Portal</h2>
-              <p className="text-[11px] text-slate-400">Prototype Demonstration Credentials</p>
+              <p className="text-[11px] text-slate-400">Department of Consumer Affairs &bull; Legal Metrology</p>
             </div>
           </div>
           <button

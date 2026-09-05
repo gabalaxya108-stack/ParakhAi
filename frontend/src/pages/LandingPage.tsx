@@ -287,6 +287,20 @@ export const LandingPage: React.FC<LandingPageProps> = ({
         </div>
 
         <div className="relative max-w-6xl mx-auto space-y-10">
+          {/* Official Emblem Logo */}
+          <div className="flex justify-center pt-2">
+            <div className="relative group">
+              <div className="absolute -inset-1.5 bg-gradient-to-r from-blue-600 via-amber-500 to-orange-600 rounded-3xl blur-md opacity-30 group-hover:opacity-60 transition duration-500"></div>
+              <div className="relative bg-white dark:bg-slate-900 p-2.5 sm:p-3 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-800 flex items-center justify-center">
+                <img
+                  src="/logo.png"
+                  alt="PARAKH AI - Clearer Information. Safer Choices."
+                  className="w-24 h-24 sm:w-28 sm:h-28 object-contain rounded-xl"
+                />
+              </div>
+            </div>
+          </div>
+
           {/* Top Pill */}
           <div className="flex justify-center">
             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-orange-50 dark:bg-orange-950/60 border border-orange-300 dark:border-orange-800/80 text-orange-900 dark:text-orange-200 text-sm font-bold shadow-xs hover:border-orange-400 transition cursor-default">

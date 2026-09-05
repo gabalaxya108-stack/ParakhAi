@@ -176,8 +176,8 @@ export function App() {
             onClick={() => setActiveTab("landing")}
             className="flex items-center gap-2.5 cursor-pointer select-none"
           >
-            <div className="w-7 h-7 rounded bg-blue-900 text-white flex items-center justify-center shadow-xs">
-              <Scale className="w-4 h-4" />
+            <div className="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center bg-white shadow-xs border border-slate-200 dark:border-slate-700 shrink-0">
+              <img src="/logo.png" alt="PARAKH AI" className="w-full h-full object-contain p-0.5" />
             </div>
             <div className="flex items-center gap-2">
               <span className="font-bold text-xs tracking-tight text-slate-900 dark:text-white uppercase">
